@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forno Nascosto | Скрытая печь</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключение шрифтов (можно оставить в CSS, но для надёжности добавим сюда) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <div class="logoimg"> <img src='img/пицца2.png' alt=""></div>
+            <div class="logo">La Corte del Forno</div>
+            <nav class="avn">
+                <a href="#hero">Главная</a>
+                <a href="#forno">Печь</a>
+                <a href="#menu">Меню</a>
+                <a href="#courtyard">Дворик</a>
+                <a href="#story">История</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Главный экран -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-subtitle">Benvenuti</div>
+                <h1 class="hero-title">Истинный вкус<br>итальянского дворика</h1>
+                <p class="hero-description">Пицца, рожденная в пламени дровяной печи, секретные рецепты и атмосфера старой Италии в самом сердце города</p>
+                <a href="#menu" class="btn">Открыть меню</a>
+            </div>
+        </section>
+
+        <!-- Секция с печью -->
+        <section class="forno-section" id="forno">
+            <div class="container forno-container">
+                <div class="forno-image">
+                    <div class="forno-placeholder"></div>
+                    <div class="forno-badge">с 1952</div>
+                </div>
+                <div class="forno-content">
+                    <h3>Та самая печь<br>из Неаполя</h3>
+                    <p class="forno-text">В нашем дворике уже 70 лет работает дровяная печь, привезенная из самого Неаполя. Каждое утро мы зажигаем огонь, чтобы к вечеру подарить вам пиццу с идеальным хрустом и ароматом дымка.</p>
+                    <p class="forno-text">Температура внутри достигает 485°C — именно так, по заветам старых мастеров, рождается настоящая итальянская пицца.</p>
+                    <div class="forno-features">
+                        <div class="feature">
+                            <div class="feature-number">485°</div>
+                            <div class="feature-label">жар печи</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-number">90 сек</div>
+                            <div class="feature-label">готовка</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-number">70 лет</div>
+                            <div class="feature-label">традиций</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Меню -->
+        <section class="menu-section" id="menu">
+            <div class="container">
+                <div class="menu-header">
+                    <h2>Mangia! Меню</h2>
+                    <p>Всё, как в старом Неаполе</p>
+                </div>
+
+                <!-- Скрытые переключатели -->
+                <input type="radio" name="menu-toggle" id="tab1" checked>
+                <input type="radio" name="menu-toggle" id="tab2">
+                <input type="radio" name="menu-toggle" id="tab3">
+                <input type="radio" name="menu-toggle" id="tab4">
+
+                <nav class="menu-categories">
+                    <label for="tab1" class="category-btn">Pizza</label>
+                    <label for="tab2" class="category-btn">Antipasti</label>
+                    <label for="tab3" class="category-btn">Pasta</label>
+                    <label for="tab4" class="category-btn">Dolci</label>
+                </nav>
+
+                <div class="menu-grid pizza" >
+                    <!-- Пицца 1 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Маргарита D.O.C.</div>
+                            <div class="menu-item-description">Томаты сан-марцано, моцарелла ди буфала, базилик, пармезан</div>
+                        </div>
+                        <div class="menu-item-price">890₽</div>
+                    </div>
+
+                    <!-- Пицца 2 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Четыре сыра</div>
+                            <div class="menu-item-description">Горгонзола, пармезан, моцарелла, фонтина, трюфельное масло</div>
+                        </div>
+                        <div class="menu-item-price">1290₽</div>
+                    </div>
+
+                    <!-- Пицца 3 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Диабло</div>
+                            <div class="menu-item-description">Салями пиканте, халапеньо, мед, сыр пекорино</div>
+                        </div>
+                        <div class="menu-item-price">1190₽</div>
+                    </div>
+
+                    <!-- Пицца 4 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Трюфельная</div>
+                            <div class="menu-item-description">Грибы, трюфельный крем, рукола, пармезан</div>
+                        </div>
+                        <div class="menu-item-price">1590₽</div>
+                    </div>
+
+                    <!-- Добавляй свои позиции -->
+                </div>
+
+                <div class="menu-grid antipasti" >
+                    <!-- Пицца 1 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Маргарита D.O.C.</div>
+                            <div class="menu-item-description">Томаты сан-марцано, моцарелла ди буфала, базилик, пармезан</div>
+                        </div>
+                        <div class="menu-item-price">890₽</div>
+                    </div>
+
+                    <!-- Пицца 2 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Четыре сыра</div>
+                            <div class="menu-item-description">Горгонзола, пармезан, моцарелла, фонтина, трюфельное масло</div>
+                        </div>
+                        <div class="menu-item-price">1290₽</div>
+                    </div>
+
+                    <!-- Пицца 3 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Диабло</div>
+                            <div class="menu-item-description">Салями пиканте, халапеньо, мед, сыр пекорино</div>
+                        </div>
+                        <div class="menu-item-price">1190₽</div>
+                    </div>
+
+                    <!-- Пицца 4 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Трюфельная</div>
+                            <div class="menu-item-description">Грибы, трюфельный крем, рукола, пармезан</div>
+                        </div>
+                        <div class="menu-item-price">1590₽</div>
+                    </div>
+
+                    <!-- Добавляй свои позиции -->
+                </div>
+
+                <div class="menu-grid pasta" >
+                    <!-- Пицца 1 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Маргарита D.O.C.</div>
+                            <div class="menu-item-description">Томаты сан-марцано, моцарелла ди буфала, базилик, пармезан</div>
+                        </div>
+                        <div class="menu-item-price">890₽</div>
+                    </div>
+
+                    <!-- Пицца 2 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Четыре сыра</div>
+                            <div class="menu-item-description">Горгонзола, пармезан, моцарелла, фонтина, трюфельное масло</div>
+                        </div>
+                        <div class="menu-item-price">1290₽</div>
+                    </div>
+
+                    <!-- Пицца 3 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Диабло</div>
+                            <div class="menu-item-description">Салями пиканте, халапеньо, мед, сыр пекорино</div>
+                        </div>
+                        <div class="menu-item-price">1190₽</div>
+                    </div>
+
+                    <!-- Пицца 4 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Трюфельная</div>
+                            <div class="menu-item-description">Грибы, трюфельный крем, рукола, пармезан</div>
+                        </div>
+                        <div class="menu-item-price">1590₽</div>
+                    </div>
+
+                    <!-- Добавляй свои позиции -->
+                </div>
+
+                <div class="menu-grid dolci" >
+                    <!-- Пицца 1 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Маргарита D.O.C.</div>
+                            <div class="menu-item-description">Томаты сан-марцано, моцарелла ди буфала, базилик, пармезан</div>
+                        </div>
+                        <div class="menu-item-price">890₽</div>
+                    </div>
+
+                    <!-- Пицца 2 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Четыре сыра</div>
+                            <div class="menu-item-description">Горгонзола, пармезан, моцарелла, фонтина, трюфельное масло</div>
+                        </div>
+                        <div class="menu-item-price">1290₽</div>
+                    </div>
+
+                    <!-- Пицца 3 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Диабло</div>
+                            <div class="menu-item-description">Салями пиканте, халапеньо, мед, сыр пекорино</div>
+                        </div>
+                        <div class="menu-item-price">1190₽</div>
+                    </div>
+
+                    <!-- Пицца 4 -->
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <div class="menu-item-name">Трюфельная</div>
+                            <div class="menu-item-description">Грибы, трюфельный крем, рукола, пармезан</div>
+                        </div>
+                        <div class="menu-item-price">1590₽</div>
+                    </div>
+
+                    <!-- Добавляй свои позиции -->
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Галерея дворика -->
+        <section class="courtyard-section" id="courtyard">
+            <div class="container">
+                <div class="menu-header">
+                    <h2>Il Cortile</h2>
+                    <p>Наш секретный дворик</p>
+                </div>
+
+                <div class="courtyard-grid">
+                    <div class="courtyard-item">
+                        <div class="courtyard-placeholder" style="background-image: url('img/123.jpg');"></div>
+                        <div class="courtyard-overlay">
+                            <h4>Веранда с плющом</h4>
+                            <p>Уютный уголок для ужина</p>
+                        </div>
+                    </div>
+
+                    <div class="courtyard-item">
+                        <div class="courtyard-placeholder" style="background-image: url('img/фонтан.jpg');"></div>
+                        <div class="courtyard-overlay">
+                            <h4>Фонтан желаний</h4>
+                            <p>Загадай желание у фонтана</p>
+                        </div>
+                    </div>
+
+                    <div class="courtyard-item">
+                        <div class="courtyard-placeholder" style="background-image: url('img/image.jpeg');"></div>
+                        <div class="courtyard-overlay">
+                            <h4>Печь под звёздами</h4>
+                            <p>Вечерние приготовления</p>
+                        </div>
+                    </div>
+
+                    <div class="courtyard-item">
+                        <div class="courtyard-placeholder" style="background-image: url('img/дерево.jpg');"></div>
+                        <div class="courtyard-overlay">
+                            <h4>Лимонные деревья</h4>
+                            <p>Аромат средиземноморья</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- История -->
+        <section class="story-section" id="story">
+            <div class="container story-container">
+                <div class="story-content">
+                    <div class="story-quote">
+                        "Мы не готовим пиццу. Мы храним историю своей семьи, передавая её через тесто и соус."
+                    </div>
+                    <p class="story-text">В 1952 году наш дед Джузеппе открыл маленькую пиццерию во дворе своего дома в Неаполе. Он и представить не мог, что спустя 70 лет его правнуки будут радовать гостей в Москве, сохраняя все секреты семейной рецептуры.</p>
+                    <p class="story-text">Каждый ингредиент мы привозим из Италии, а тесто замешиваем вручную, как учил дед. И пусть сегодня модно всё современное, мы остаёмся верными традициям.</p>
+                    <div class="story-signature">— Семья Риччи</div>
+                </div>
+                <div class="story-image">
+                    <div class="story-placeholder"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2 style="margin-bottom: 40px;">Приходите<br>в гости</h2>
+
+                    <div class="contact-item">
+                        <h4>Адрес</h4>
+                        <p>Москва, Старомонетный пер., 18</p>
+                        <p>(вход в арку, направо во двор)</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>Бронирование</h4>
+                        <p>+7 (999) 123-45-67</p>
+                        <p>forno@nascoto.ru</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>Часы работы</h4>
+                        <div class="hours-grid">
+                            <span class="hours-day">Пн-Чт</span> <span>12:00 - 23:00</span>
+                            <span class="hours-day">Пт-Сб</span> <span>12:00 - 01:00</span>
+                            <span class="hours-day">Вс</span> <span>13:00 - 23:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Забронировать столик</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-input" placeholder="Телефон">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Дата и время">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-input" placeholder="Количество гостей">
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Забронировать</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">
+                        FORNO NASCOTO
+                        <span>секретная печь</span>
+                    </div>
+                    <p style="opacity: 0.7; margin-bottom: 20px;">Аутентичная итальянская пиццерия в центре Москвы. Тёплый дворик, дровяная печь и семейные рецепты с 1952 года.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📱</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#hero">Главная</a></li>
+                        <li><a href="#forno">О печи</a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#courtyard">Дворик</a></li>
+                        <li><a href="#story">История</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Меню</h4>
+                    <ul>
+                        <li><a href="#">Пицца</a></li>
+                        <li><a href="#">Антипасти</a></li>
+                        <li><a href="#">Паста</a></li>
+                        <li><a href="#">Десерты</a></li>
+                        <li><a href="#">Напитки</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="tel:+79991234567">+7 (999) 123-45-67</a></li>
+                        <li><a href="mailto:forno@nascoto.ru">forno@nascoto.ru</a></li>
+                        <li><a href="#">Схема прохода</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 Forno Nascosto. Учебный проект. Все права защищены.</p>
+                <p>Сделано с ❤️ и итальянской страстью</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

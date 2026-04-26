@@ -1,1 +1,290 @@
-<h1>МЕНЮ</h1>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полное меню пиццерии | La Forno</title>
+    <!-- Подключаем общий CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Небольшие доработки специально для страницы полного меню -->
+    <style>
+        /* Переопределяем скрытие сеток меню – показываем все категории */
+        .pizza, .antipasti, .pasta, .dolci {
+            display: block !important;
+        }
+        
+        /* Для каждой категории создаём свою сетку (как в оригинале) */
+        .menu-category {
+            margin-bottom: 80px;
+        }
+        
+        .menu-category h2 {
+            font-size: 2.8rem;
+            text-align: center;
+            color: #2c1e0f;
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .menu-category p {
+            text-align: center;
+            font-style: italic;
+            color: #6b5a48;
+            margin-bottom: 40px;
+        }
+        
+        /* Используем ту же сетку, что и в оригинале для активных табов */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Стили для элементов меню уже есть в style.css – .menu-item и т.д. */
+        /* Дополнительно – адаптивность для маленьких экранов */
+        @media (max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+            .menu-category h2 {
+                font-size: 2rem;
+            }
+        }
+        
+        /* Убираем лишние отступы, если секция идёт после шапки */
+        .full-menu-hero {
+            background: #fff4e6;
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+        .full-menu-hero h1 {
+            font-size: 3.5rem;
+            font-family: 'Playfair Display', serif;
+            color: #2c1e0f;
+        }
+        .full-menu-hero p {
+            font-size: 1.2rem;
+            color: #6b5a48;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ========== ШАПКА (аналогично главной странице) ========== -->
+<header class="header" id="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logoimg">
+                <img src="img/лого2.png" alt="Логотип">
+            </div>
+            <div class="logo">La Forno</div>
+            <nav class="avn">
+                <a href="html.html">Главная</a>
+                <a href="html.html#contact">Контакты</a>
+                <a href="html.html#story">История</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Небольшой заголовок страницы -->
+<section class="full-menu-hero">
+    <div class="container">
+        <h1>Наше меню</h1>
+        <p>Все блюда, приготовленные с любовью по старинным рецептам</p>
+    </div>
+</section>
+
+<!-- ========== ОСНОВНОЕ СОДЕРЖИМОЕ – ПОЛНОЕ МЕНЮ ========== -->
+<main>
+    <div class="container">
+        
+        <!-- Категория: ПИЦЦА -->
+        <div class="menu-category">
+            <h2>Пицца</h2>
+            <p>Традиционное тесто, томатный соус и лучшие итальянские продукты</p>
+            <div class="menu-grid pizza">
+                <!-- Элемент меню 1 -->
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Маргарита</div>
+                        <div class="menu-item-description">Томатный соус, моцарелла, базилик, оливковое масло</div>
+                    </div>
+                    <div class="menu-item-price">590 ₽</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Пепперони</div>
+                        <div class="menu-item-description">Острая пепперони, томатный соус, моцарелла</div>
+                    </div>
+                    <div class="menu-item-price">690 ₽</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Четыре сыра</div>
+                        <div class="menu-item-description">Моцарелла, пармезан, горгонзола, фета</div>
+                    </div>
+                    <div class="menu-item-price">750 ₽</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Диабло</div>
+                        <div class="menu-item-description">Острая салями, перец чили, томаты, моцарелла</div>
+                    </div>
+                    <div class="menu-item-price">720 ₽</div>
+                </div>
+                <!-- Добавьте больше пицц по необходимости -->
+            </div>
+        </div>
+        
+        <!-- Категория: АНТИПАСТИ (закуски) -->
+        <div class="menu-category">
+            <h2>Антипасти</h2>
+            <p>Традиционные итальянские закуски к вину и аперитиву</p>
+            <div class="menu-grid antipasti">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Брускетта с томатами</div>
+                        <div class="menu-item-description">Хрустящий хлеб, чеснок, помидоры, базилик</div>
+                    </div>
+                    <div class="menu-item-price">350 ₽</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Карпаччо из говядины</div>
+                        <div class="menu-item-description">Тонкие ломтики мяса, пармезан, руккола, лимонный соус</div>
+                    </div>
+                    <div class="menu-item-price">490 ₽</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Мясное ассорти</div>
+                        <div class="menu-item-description">Прошутто, салями, брезаола, оливки, песто</div>
+                    </div>
+                    <div class="menu-item-price">590 ₽</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Категория: ПАСТА -->
+        <div class="menu-category">
+            <h2>Паста</h2>
+            <p>Домашняя паста, приготовленная по старинным рецептам</p>
+            <div class="menu-grid pasta">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Карбонара</div>
+                        <div class="menu-item-description">Спагетти, гуанчиале, яйцо, пекорино, чёрный перец</div>
+                    </div>
+                    <div class="menu-item-price">550 ₽</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Болоньезе</div>
+                        <div class="menu-item-description">Тальятелле, томатный соус с говяжьим фаршем и овощами</div>
+                    </div>
+                    <div class="menu-item-price">530 ₽</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Креветки с цукини</div>
+                        <div class="menu-item-description">Лимонно-сливочный соус, тигровые креветки, цукини</div>
+                    </div>
+                    <div class="menu-item-price">690 ₽</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Категория: ДОЛЬЧИ (десерты) -->
+        <div class="menu-category">
+            <h2>Дольчи</h2>
+            <p>Десерты, которые заставят вас влюбиться в Италию</p>
+            <div class="menu-grid dolci">
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Тирамису</div>
+                        <div class="menu-item-description">Классический десерт с маскарпоне, кофе и какао</div>
+                    </div>
+                    <div class="menu-item-price">420 ₽</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Панна котта</div>
+                        <div class="menu-item-description">Нежный десерт с ванилью и ягодным соусом</div>
+                    </div>
+                    <div class="menu-item-price">380 ₽</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-info">
+                        <div class="menu-item-name">Кассата</div>
+                        <div class="menu-item-description">Сицилийский десерт с рикоттой, цукатами и глазурью</div>
+                    </div>
+                    <div class="menu-item-price">450 ₽</div>
+                </div>
+            </div>
+        </div>
+        
+    </div> <!-- end container -->
+</main>
+
+<!-- ========== ПОДВАЛ (копия с главной страницы) ========== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-logo">La Forno</div>
+                <p>Аутентичная итальянская пиццерия с дровяной печью.<br> Вкус, который помнят века.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📧</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Меню</h4>
+                <ul>
+                    <li><a href="full-menu.html#pizza">Пицца</a></li>
+                    <li><a href="full-menu.html#antipasti">Антипасти</a></li>
+                    <li><a href="full-menu.html#pasta">Паста</a></li>
+                    <li><a href="full-menu.html#dolci">Дольчи</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Информация</h4>
+                <ul>
+                    <li><a href="index.html#story">О нас</a></li>
+                    <li><a href="index.html#contact">Контакты</a></li>
+                    <li><a href="#">Доставка</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Контакты</h4>
+                <ul>
+                    <li>+7 (999) 123-45-67</li>
+                    <li>ул. Итальянская, 10</li>
+                    <li>info@laforno.ru</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 La Forno – итальянская пиццерия. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Скрипт для фиксированной шапки (такой же, как на главной странице) -->
+<script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
+
+</body>
+</html>
